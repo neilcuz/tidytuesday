@@ -46,7 +46,7 @@ chart_colours <- c("big_dave" = "#ff6f61", "times" = "#92a8d1")
 # You can use the ggtext package to colour titles. Add element_markdown into themes for that particular item.
 
 subtitle_html <- glue(
-    "<span style='font-size:12pt'> Average monthly clue length, Jan 2016 to Dec 2019, for
+    "<span style='font-size:12pt'> Average number of characters in clues by month, Jan 2016 to Dec 2019, for
     <span style='color:{chart_colours[1]};'>Big Dave</span> and the
     <span style='color:{chart_colours[2]};'>Times </span>
     </span>")
@@ -61,7 +61,7 @@ p <- combined_monthly %>%
   geom_line() +
   geom_point() +
   theme_minimal() +
-  labs(y = "Mean monthly clue length", x = "", title = "Tidy Tuesday Crosswords", subtitle = subtitle_html) +
+  labs(y = "Average number of characters", x = "", title = "Tidy Tuesday Crosswords", subtitle = subtitle_html) +
   theme_bw() +
   theme(panel.grid = element_blank(),
         panel.grid.major.y = element_line(colour = "#EADDDD"),
@@ -75,4 +75,6 @@ p <- combined_monthly %>%
         plot.title.position = "plot",
         legend.position = "none")
 
-ggsave(glue("{here()}/figures/tidy-tuesday_2022-04-19.png"), width = 9 * 0.75, height = 7.5 * 0.75, dpi = 500)
+p
+
+ggsave(glue("{here()}/figures/tidy-tuesday_2022-04-19.png"), width = 7.65, height = 6.375, dpi = 550)
