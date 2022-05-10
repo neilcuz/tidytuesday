@@ -10,8 +10,6 @@ library(snakecase)
 library(readr)
 library(here)
 
-snakecase::to_title_case("HELLO MATE")
-
 nyt_titles <- readr::read_tsv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-05-10/nyt_titles.tsv')
 
 min_weeks <- 20
@@ -61,10 +59,4 @@ p <- nyt_titles |>
         panel.background = element_rect(fill = "black")) +
   scale_y_continuous(breaks = c(20, 60, 100, 140, 180), labels = c(20, 60, 100, 140, 180), limits = c(20, 240))
 
-
-p
-
 ggsave(glue("{here()}/figures/tidy-tuesday_2022-05-10.png"), width = 7.65, height = 6.375, dpi = 550)
-
-
-
