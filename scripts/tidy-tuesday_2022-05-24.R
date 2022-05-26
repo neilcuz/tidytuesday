@@ -121,19 +121,18 @@ modify_chart <- function(p, grob_list) {
 
 chart_colours <- c("pos" = "#006B38FF", "neg" = "#E94B3CFF")
 
-
 title_html <-  glue(
   "<span style='font-size:16pt;font-family:'Gill Sans;align:left'>New Zealand and
   England are great at rugby</span><br><br>
   <span style='font-size:10pt;line-height:50%;align:left'>
-  The chart shows the 20-match rolling winning average for 12 of the best teams in
-  women's international<br>rugby.The green lines indicate that a team had a
+  The chart shows the 20-match rolling mean score differential for 12 of the best teams in
+  women's international<br>rugby. The green lines indicate that a team had a
   <span style='color:{chart_colours[1]};font-size:10pt;line-height:50%'>positive
-  score differential</span> over the previous 20 matches<br>while the red lines
+  score differential</span> over the previous 20 matches while<br> the red lines
   indicate a team had a <span style='color:{chart_colours[2]};font-size:10pt;line-height:50%'>negative
-  score differential.</span> New Zealand and England appear to <br> have been the
+  score differential.</span> New Zealand and England appear to have been<br> the
   best teams over the period with most of their time spent with a positive
-  rolling score <br> differential. No adjustment has been made for strength of
+  rolling score differential. No <br> adjustment has been made for strength of
   opposition.
   </span>"
   )
