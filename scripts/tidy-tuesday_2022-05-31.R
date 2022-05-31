@@ -1,8 +1,4 @@
 
-# TidyTuesday - Rugby
-
-# Setup --------------------------------------------------------------------------------------------
-
 library(tidytuesdayR)
 library(dplyr)
 library(stringr)
