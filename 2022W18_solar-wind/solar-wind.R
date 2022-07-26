@@ -9,7 +9,7 @@ library(ggtext)
 library(glue)
 library(here)
 
-path <- glue("{here::here()}2022W18_solar-wind/")
+path <- glue("{here::here()}/2022W18_solar-wind/")
 
 raw_data <- tidytuesdayR::tt_load('2022-05-03')
 

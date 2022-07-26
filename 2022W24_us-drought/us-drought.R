@@ -13,7 +13,7 @@ library(glue)
 library(here)
 library(geofacet)
 
-path <- glue("{here::here()}2022W24_us-drought/")
+path <- glue("{here::here()}/2022W24_us-drought/")
 
 raw_data <- tt_load('2022-06-14')
 

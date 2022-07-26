@@ -18,7 +18,7 @@ library(png)
 library(ggtext)
 library(gtable)
 
-path <- glue("{here::here()}2022W21_womens-rugby/")
+path <- glue("{here::here()}/2022W21_womens-rugby/")
 
 raw_data <- tidytuesdayR::tt_load('2022-05-24')
 

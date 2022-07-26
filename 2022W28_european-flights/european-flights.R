@@ -13,7 +13,7 @@ library(glue)
 library(ggtext)
 library(here)
 
-path <- glue("{here::here()}2022W28_european-flights/")
+path <- glue("{here::here()}/2022W28_european-flights/")
 
 # Data prep --------------------------------------------------------------------
 

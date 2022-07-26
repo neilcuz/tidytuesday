@@ -11,7 +11,7 @@ library(tidyr)
 library(ggtext)
 library(here)
 
-path <- glue("{here::here()}2022W16_crossword-puzzles/")
+path <- glue("{here::here()}/2022W16_crossword-puzzles/")
 
 raw_data <- tidytuesdayR::tt_load('2022-04-19')
 

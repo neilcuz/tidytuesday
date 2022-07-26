@@ -12,7 +12,7 @@ library(here)
 library(stringr)
 library(ggtext)
 
-path <- glue("{here::here()}2022W20_eurovision/")
+path <- glue("{here::here()}/2022W20_eurovision/")
 
 raw_data <- tidytuesdayR::tt_load('2022-05-17')
 

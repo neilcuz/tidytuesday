@@ -10,7 +10,7 @@ library(snakecase)
 library(readr)
 library(here)
 
-path <- glue("{here::here()}2022W28_european-flights/")
+path <- glue("{here::here()}/2022W19_nyt-bestsellers/")
 
 nyt_titles <- readr::read_tsv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-05-10/nyt_titles.tsv')
 

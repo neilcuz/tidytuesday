@@ -9,7 +9,7 @@ library(showtext)
 library(glue)
 library(here)
 
-path <- glue("{here::here()}2022W22_company-reputation/")
+path <- glue("{here::here()}/2022W22_company-reputation/")
 
 raw_data <- tidytuesdayR::tt_load('2022-05-31')
 
