@@ -4,6 +4,10 @@
 
 This repo contains code for the R tidytuesday challenge. More info can be found here - https://github.com/rfordatascience/tidytuesday
 I don't do TidyTuesday every week - sometimes I am too busy. So if one is missing it is because I haven't done it.
+Ignore the scripts folder - I have left it up to preserve links from old tweets as they sometimes still get interest.
+
+Any questions then DM me on Twitter [@neilgcurrie](https://twitter.com/neilgcurrie).
+
 
 ## Repos
 
